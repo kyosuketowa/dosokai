@@ -104,6 +104,68 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* Page Nav Bar (top links) */
+.page-nav-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-300);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.page-nav-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.page-nav-bar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 8px;
+}
+
+.page-nav-bar li {
+  flex-shrink: 0;
+}
+
+.page-nav-bar a {
+  display: block;
+  padding: 10px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.page-nav-bar a:hover {
+  background: var(--blue-bg);
+}
+
+.page-nav-bar a.is-current {
+  border-bottom-color: var(--navy);
+  background: var(--blue-bg);
+}
+
+.page-nav-bar .nav-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
 /* Hero (top page) */
 .hero {
   background: linear-gradient(135deg, var(--navy), var(--navy-light));
