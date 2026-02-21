@@ -21,6 +21,9 @@
   --yellow-bg: #FFF8E1;
   --yellow-border: #FFC107;
   --red-speaker: #C62828;
+  --blue-speaker: #1565C0;
+  --teal-speaker: #00796B;
+  --purple-speaker: #6A1B9A;
   --orange-bg: #FFF3E0;
   --orange-border: #FF9800;
   --white: #FFFFFF;
@@ -418,6 +421,18 @@ main {
   margin-top: 0;
 }
 
+.speaker.speaker-maeda {
+  background: var(--blue-speaker);
+}
+
+.speaker.speaker-demizu {
+  background: var(--teal-speaker);
+}
+
+.speaker.speaker-teacher {
+  background: var(--purple-speaker);
+}
+
 /* Script lines (speech) */
 .script-speech {
   background: var(--white);
@@ -427,6 +442,18 @@ main {
   font-size: 1.05rem;
   line-height: 1.9;
   border-radius: 0 8px 8px 0;
+}
+
+.speaker-maeda + .script-speech {
+  border-left-color: var(--blue-speaker);
+}
+
+.speaker-demizu + .script-speech {
+  border-left-color: var(--teal-speaker);
+}
+
+.speaker-teacher + .script-speech {
+  border-left-color: var(--purple-speaker);
 }
 
 .script-speech strong {
